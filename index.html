@@ -228,13 +228,13 @@ body {
 
 @keyframes popup {
   0% {top: 700px;}
-  70% {top: 190px;}
-  100% {top: 200px;}
+  70% {top: 170px;}
+  100% {top: 180px;}
 }
 
 @keyframes popout {
-  0% {top: 200px;}
-  30% {top: 190px;}
+  0% {top: 180px;}
+  30% {top: 170px;}
   100% {top: 700px;}
 }
 
@@ -565,8 +565,7 @@ window.delClass = function(x, y) {
     &lt;&lt;set $count to 0&gt;&gt;
     &lt;&lt;goto &quot;Q5&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;&lt;&lt;if $Q5 is true&gt;&gt;✔&lt;&lt;/if&gt;&gt;&lt;&lt;if $EndA is true&gt;&gt;🄰&lt;&lt;/if&gt;&gt;&lt;&lt;if $EndB is true&gt;&gt;🄱&lt;&lt;/if&gt;&gt;&lt;&lt;/clip&gt;&gt;&lt;&lt;/nobr&gt;&gt;
-
-&lt;&lt;if $Q1 is true and $Q2 is true and $Q3 is true and $Q4 is true and $Q5 is true&gt;&gt;
+&lt;&lt;if $Q1 is true and $Q2 is true and $Q3 is true and $Q4 is true and $Q5 is true&gt;&gt;\
     &lt;div style = &quot;text-align: right;&quot;&gt;&lt;&lt;timed 1s&gt;&gt;&lt;&lt;link &quot;Next page (Exit Procedures) -&gt;&quot;&gt;&gt;
             &lt;&lt;script&gt;&gt;
         addClass(&quot;clipboard&quot;, &quot;popout&quot;)
@@ -587,9 +586,6 @@ window.delClass = function(x, y) {
 &lt;&lt;set $EndB to false&gt;&gt;
 &lt;&lt;set $scared to false&gt;&gt;
 &lt;&lt;set $answer to &quot;none&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="label" tags="" position="1100,100" size="100,100">&lt;&lt;include $label&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="intro" tags="" position="1225,100" size="100,100">INTRODUCTION</tw-passagedata><tw-passagedata pid="11" name="qstn1" tags="" position="100,225" size="100,100">QUESTION 1</tw-passagedata><tw-passagedata pid="12" name="qstn2" tags="" position="225,225" size="100,100">QUESTION 2</tw-passagedata><tw-passagedata pid="13" name="qstn3" tags="" position="350,225" size="100,100">QUESTION 3</tw-passagedata><tw-passagedata pid="14" name="qstn4" tags="" position="475,225" size="100,100">QUESTION 4</tw-passagedata><tw-passagedata pid="15" name="qstn5" tags="" position="600,225" size="100,100">QUESTION 5</tw-passagedata><tw-passagedata pid="16" name="ref" tags="" position="725,225" size="100,100">NOTES &amp; REFERENCES</tw-passagedata><tw-passagedata pid="17" name="START" tags="n" position="850,225" size="100,100">&lt;&lt;nobr&gt;&gt;&lt;&lt;set $Q1 to false&gt;&gt;
-&lt;&lt;script&gt;&gt;
-togClip();
-&lt;&lt;/script&gt;&gt;
 &lt;&lt;set $Q2 to false&gt;&gt;
 &lt;&lt;set $Q3 to false&gt;&gt;
 &lt;&lt;set $Q4 to false&gt;&gt;
@@ -622,13 +618,12 @@ You [[do as your clipboard says|END2]].</tw-passagedata><tw-passagedata pid="23"
 &lt;div style=text-align:left; font-weight:900;&gt;THE END&lt;/div&gt;
 
 [[(click for notes and references!)|notes]]</tw-passagedata><tw-passagedata pid="24" name="notes" tags="" position="475,350" size="100,100">&lt;&lt;set $label to &quot;ref&quot;&gt;&gt;\
-Quest images are from images from &lt;a href=&quot;https://singaporemotherhood.com/forum/threads/wte-quest-of-the-treasure-dragon-cards-by-nlb.46898/!&quot; style=animation:none;&gt;here&lt;/a&gt;!
+Quest images are from images from &lt;a href=&quot;https://singaporemotherhood.com/forum/threads/wte-quest-of-the-treasure-dragon-cards-by-nlb.46898/&quot; style=animation:none;&gt;here&lt;/a&gt;!
 
 The rest of the images are modified from photos I took in Nagoya, Japan while on a study trip I’m undertaking as I write this script! They were modified with the help of &lt;a href=&quot;https://kanderwund.itch.io/image-converter&quot; style=animation:none;&gt;this tool&lt;/a&gt;: and then edited further with Photoshop.
 
 Thank you for playing, and I hope you enjoyed my application! 
-&lt;div style=text-align: right;&gt; -HY&lt;/div&gt;\
-[[(Restart?)|START]]</tw-passagedata><tw-passagedata pid="25" name="Q1" tags="n" position="600,350" size="100,100">&lt;&lt;set $Q1 to true&gt;&gt;&lt;&lt;set $label to &quot;qstn1&quot;&gt;&gt;It takes a while, but you are soon able to understand the words that the tree suggests within your brain, the paragraphs [[unfurling in your mind’s eye|Q1a]]:</tw-passagedata><tw-passagedata pid="26" name="Q1a" tags="" position="725,350" size="100,100">Advertising is commonly seen as something soulless, corporate, profit-driven – a cog in the ever-grinding capitalism machine. 
+&lt;div style=text-align: right;&gt; -HY&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Q1" tags="n" position="600,350" size="100,100">&lt;&lt;set $Q1 to true&gt;&gt;&lt;&lt;set $label to &quot;qstn1&quot;&gt;&gt;It takes a while, but you are soon able to understand the words that the tree suggests within your brain, the paragraphs [[unfurling in your mind’s eye|Q1a]]:</tw-passagedata><tw-passagedata pid="26" name="Q1a" tags="" position="725,350" size="100,100">Advertising is commonly seen as something soulless, corporate, profit-driven – a cog in the ever-grinding capitalism machine. 
 
 I think that this is sometimes true, but not always, and to assume it’s true for all cases and contexts would be discrediting the creativity and artistry that goes into the craft. [[➤|Q1ab]]</tw-passagedata><tw-passagedata pid="27" name="Q1ab" tags="" position="850,350" size="100,100">The prospect of ‘marketing’ used to strike disdain within me, and make me worry that I would be entering the wrong industry, but I’ve since realised that, in the end, it’s really about effective messaging, which can be used for many different purposes. 
 
